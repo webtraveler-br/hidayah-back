@@ -1,0 +1,512 @@
+set 24 23:16:19 vitoria-550XCJ-550XCR sudo[65205]:     root : TTY=pts/0 ; PWD=/home/vitoria/instalacao-basica ; USER=root ; COMMAND=/usr/bin/apt-key adv --fetch-keys https://mariadb.org/mariadb_release_signing_key.asc
+set 24 23:16:22 vitoria-550XCJ-550XCR sudo[65517]:     root : TTY=pts/0 ; PWD=/home/vitoria/instalacao-basica ; USER=root ; COMMAND=/usr/bin/add-apt-repository deb [arch=amd64] http://mirror.ufscar.br/mariadb/repo/10.5/ubuntu focal main
+set 24 23:17:09 vitoria-550XCJ-550XCR sudo[66779]:     root : TTY=pts/0 ; PWD=/home/vitoria/instalacao-basica ; USER=root ; COMMAND=/usr/bin/apt-get -y -qq install mariadb-client mariadb-server
+set 24 23:18:54 vitoria-550XCJ-550XCR audit[67191]: AVC apparmor="STATUS" operation="profile_remove" info="profile does not exist" error=-2 profile="unconfined" name="/usr/sbin/mariadbd" pid=67191 comm="apparmor_parser"
+set 24 23:18:54 vitoria-550XCJ-550XCR kernel: audit: type=1400 audit(1601000334.257:56): apparmor="STATUS" operation="profile_remove" info="profile does not exist" error=-2 profile="unconfined" name="/usr/sbin/mariadbd" pid=67191 comm="apparmor_parser"
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] /usr/sbin/mariadbd (mysqld 10.5.5-MariaDB-1:10.5.5+maria~focal) starting as process 67340 ...
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Warning] Could not increase number of max_open_files to more than 16384 (request: 32190)
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] InnoDB: Using Linux native AIO
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] InnoDB: Uses event mutexes
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] InnoDB: Number of pools: 1
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] InnoDB: Using SSE4.2 crc32 instructions
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] InnoDB: Completed initialization of buffer pool
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] InnoDB: 128 rollback segments are active.
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] InnoDB: 10.5.5 started; log sequence number 45079; transaction id 21
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] Plugin 'FEEDBACK' is disabled.
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] InnoDB: Buffer pool(s) load completed at 200924 23:18:55
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] Server socket created on IP: '127.0.0.1'.
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] Reading of all Master_info entries succeeded
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] Added new Master_info '' to hash table
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:18:55 0 [Note] /usr/sbin/mariadbd: ready for connections.
+set 24 23:18:55 vitoria-550XCJ-550XCR mariadbd[67340]: Version: '10.5.5-MariaDB-1:10.5.5+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+set 24 23:19:02 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:19:02 0 [Note] /usr/sbin/mariadbd (initiated by: unknown): Normal shutdown
+set 24 23:19:02 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:19:02 0 [Note] Event Scheduler: Purging the queue. 0 events
+set 24 23:19:02 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:19:02 0 [Note] InnoDB: FTS optimize thread exiting.
+set 24 23:19:02 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:19:02 0 [Note] InnoDB: Starting shutdown...
+set 24 23:19:02 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:19:02 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+set 24 23:19:02 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:19:02 0 [Note] InnoDB: Buffer pool(s) dump completed at 200924 23:19:02
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:19:03 0 [Note] InnoDB: Shutdown completed; log sequence number 45091; transaction id 22
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:19:03 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[67340]: 2020-09-24 23:19:03 0 [Note] /usr/sbin/mariadbd: Shutdown complete
+set 24 23:19:03 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Succeeded.
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] /usr/sbin/mariadbd (mysqld 10.5.5-MariaDB-1:10.5.5+maria~focal) starting as process 68882 ...
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Warning] Could not increase number of max_open_files to more than 16384 (request: 32190)
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] InnoDB: Using Linux native AIO
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] InnoDB: Uses event mutexes
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] InnoDB: Number of pools: 1
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] InnoDB: Using SSE4.2 crc32 instructions
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] InnoDB: Completed initialization of buffer pool
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] InnoDB: 128 rollback segments are active.
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] InnoDB: 10.5.5 started; log sequence number 45091; transaction id 21
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] Plugin 'FEEDBACK' is disabled.
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] InnoDB: Buffer pool(s) load completed at 200924 23:19:03
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] Server socket created on IP: '127.0.0.1'.
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] Reading of all Master_info entries succeeded
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] Added new Master_info '' to hash table
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-24 23:19:03 0 [Note] /usr/sbin/mariadbd: ready for connections.
+set 24 23:19:03 vitoria-550XCJ-550XCR mariadbd[68882]: Version: '10.5.5-MariaDB-1:10.5.5+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+set 25 00:04:55 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-25  0:04:55 43 [Warning] Access denied for user 'forge'@'localhost' (using password: NO)
+set 25 00:08:12 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-25  0:08:12 44 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+set 25 00:08:12 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-25  0:08:12 44 [Note] InnoDB: Recalculation of persistent statistics requested for table `mysql`.`users` index `users_email_unique` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+set 25 00:08:13 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-25  0:08:13 44 [Note] InnoDB: Recalculation of persistent statistics requested for table `mysql`.`oauth_auth_codes` index `oauth_auth_codes_user_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+set 25 00:08:13 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-25  0:08:13 44 [Note] InnoDB: Recalculation of persistent statistics requested for table `mysql`.`oauth_access_tokens` index `oauth_access_tokens_user_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+set 25 00:08:14 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-25  0:08:14 44 [Note] InnoDB: Recalculation of persistent statistics requested for table `mysql`.`oauth_refresh_tokens` index `oauth_refresh_tokens_access_token_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+set 25 00:08:14 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-25  0:08:14 44 [Note] InnoDB: Recalculation of persistent statistics requested for table `mysql`.`oauth_clients` index `oauth_clients_user_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+set 25 00:12:26 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-25  0:12:26 46 [Warning] Access denied for user 'vitoria'@'localhost'
+set 25 00:16:26 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-25  0:16:26 0 [Note] /usr/sbin/mariadbd (initiated by: unknown): Normal shutdown
+set 25 00:16:26 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-25  0:16:26 0 [Note] Event Scheduler: Purging the queue. 0 events
+set 25 00:16:26 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-25  0:16:26 0 [Note] InnoDB: FTS optimize thread exiting.
+set 25 00:16:26 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-25  0:16:26 0 [Note] InnoDB: Starting shutdown...
+set 25 00:16:26 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-25  0:16:26 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+set 25 00:16:26 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-25  0:16:26 0 [Note] InnoDB: Buffer pool(s) dump completed at 200925  0:16:26
+set 25 00:16:27 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-25  0:16:27 0 [Note] InnoDB: Shutdown completed; log sequence number 88364; transaction id 123
+set 25 00:16:27 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-25  0:16:27 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+set 25 00:16:28 vitoria-550XCJ-550XCR mariadbd[68882]: 2020-09-25  0:16:28 0 [Note] /usr/sbin/mariadbd: Shutdown complete
+set 25 00:16:28 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Succeeded.
+set 25 05:46:20 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  5:46:20 0 [Note] /usr/sbin/mariadbd (mysqld 10.5.5-MariaDB-1:10.5.5+maria~focal) starting as process 911 ...
+set 25 05:46:20 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  5:46:20 0 [Warning] Could not increase number of max_open_files to more than 16384 (request: 32190)
+set 25 05:46:24 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  5:46:24 0 [Note] InnoDB: Using Linux native AIO
+set 25 05:46:24 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  5:46:24 0 [Note] InnoDB: Uses event mutexes
+set 25 05:46:24 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  5:46:24 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+set 25 05:46:25 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  5:46:25 0 [Note] InnoDB: Number of pools: 1
+set 25 05:46:25 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  5:46:25 0 [Note] InnoDB: Using SSE4.2 crc32 instructions
+set 25 05:46:25 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  5:46:25 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+set 25 05:46:25 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  5:46:25 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+set 25 05:46:25 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  5:46:25 0 [Note] InnoDB: Completed initialization of buffer pool
+set 25 05:46:25 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  5:46:25 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+set 25 05:46:35 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  5:46:35 0 [Note] InnoDB: 128 rollback segments are active.
+set 25 08:46:36 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  8:46:36 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+set 25 08:46:36 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  8:46:36 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+set 25 08:46:36 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  8:46:36 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+set 25 08:46:36 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  8:46:36 0 [Note] InnoDB: 10.5.5 started; log sequence number 88364; transaction id 125
+set 25 08:46:36 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  8:46:36 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+set 25 08:46:36 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  8:46:36 0 [Note] Plugin 'FEEDBACK' is disabled.
+set 25 08:46:36 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  8:46:36 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+set 25 08:46:36 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  8:46:36 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+set 25 08:46:36 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  8:46:36 0 [Note] Server socket created on IP: '127.0.0.1'.
+set 25 08:46:36 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  8:46:36 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+set 25 08:46:36 vitoria-550XCJ-550XCR mariadbd[911]: 2020-09-25  8:46:36 0 [ERROR] Aborting
+set 25 08:46:38 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Main process exited, code=exited, status=1/FAILURE
+set 25 08:46:38 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Failed with result 'exit-code'.
+set 27 13:00:08 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:07 0 [Note] /usr/sbin/mariadbd (mysqld 10.5.5-MariaDB-1:10.5.5+maria~focal) starting as process 915 ...
+set 27 13:00:08 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:07 0 [Warning] Could not increase number of max_open_files to more than 16384 (request: 32190)
+set 27 13:00:09 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:09 0 [Note] InnoDB: Using Linux native AIO
+set 27 13:00:09 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:09 0 [Note] InnoDB: Uses event mutexes
+set 27 13:00:09 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:09 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+set 27 13:00:10 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:10 0 [Note] InnoDB: Number of pools: 1
+set 27 13:00:10 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:10 0 [Note] InnoDB: Using SSE4.2 crc32 instructions
+set 27 13:00:10 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:10 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+set 27 13:00:10 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:10 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+set 27 13:00:10 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:10 0 [Note] InnoDB: Completed initialization of buffer pool
+set 27 13:00:10 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:10 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+set 27 13:00:12 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:12 0 [Note] InnoDB: 128 rollback segments are active.
+set 27 13:00:12 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:12 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+set 27 13:00:12 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:12 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+set 27 13:00:13 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:13 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+set 27 13:00:13 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:13 0 [Note] InnoDB: 10.5.5 started; log sequence number 88376; transaction id 125
+set 27 13:00:13 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:13 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+set 27 13:00:13 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:13 0 [Note] Plugin 'FEEDBACK' is disabled.
+set 27 13:00:13 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:13 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+set 27 13:00:13 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:13 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+set 27 13:00:13 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:13 0 [Note] Server socket created on IP: '127.0.0.1'.
+set 27 13:00:13 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:13 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+set 27 13:00:13 vitoria-550XCJ-550XCR mariadbd[915]: 2020-09-27 13:00:13 0 [ERROR] Aborting
+set 27 13:00:15 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Main process exited, code=exited, status=1/FAILURE
+set 27 13:00:15 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Failed with result 'exit-code'.
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] /usr/sbin/mariadbd (mysqld 10.5.5-MariaDB-1:10.5.5+maria~focal) starting as process 14643 ...
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Warning] Could not increase number of max_open_files to more than 16384 (request: 32190)
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] InnoDB: Using Linux native AIO
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] InnoDB: Uses event mutexes
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] InnoDB: Number of pools: 1
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] InnoDB: Using SSE4.2 crc32 instructions
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] InnoDB: Completed initialization of buffer pool
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] InnoDB: 128 rollback segments are active.
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] InnoDB: 10.5.5 started; log sequence number 88388; transaction id 125
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] Plugin 'FEEDBACK' is disabled.
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] InnoDB: Buffer pool(s) load completed at 200928 16:34:52
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [Note] Server socket created on IP: '127.0.0.1'.
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+set 28 16:34:52 vitoria-550XCJ-550XCR mariadbd[14643]: 2020-09-28 16:34:52 0 [ERROR] Aborting
+set 28 16:34:54 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Main process exited, code=exited, status=1/FAILURE
+set 28 16:34:54 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Failed with result 'exit-code'.
+set 28 22:48:55 vitoria-550XCJ-550XCR sudo[37697]:  vitoria : TTY=pts/0 ; PWD=/home/vitoria/equipe-4/back-end ; USER=root ; COMMAND=/usr/bin/systemctl start mariadb
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] /usr/sbin/mariadbd (mysqld 10.5.5-MariaDB-1:10.5.5+maria~focal) starting as process 37762 ...
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Warning] Could not increase number of max_open_files to more than 16384 (request: 32190)
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] InnoDB: Using Linux native AIO
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] InnoDB: Uses event mutexes
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] InnoDB: Number of pools: 1
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] InnoDB: Using SSE4.2 crc32 instructions
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] InnoDB: Completed initialization of buffer pool
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] InnoDB: 128 rollback segments are active.
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] InnoDB: 10.5.5 started; log sequence number 88400; transaction id 125
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] Plugin 'FEEDBACK' is disabled.
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] Server socket created on IP: '127.0.0.1'.
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [Note] InnoDB: Buffer pool(s) load completed at 200928 22:48:55
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+set 28 22:48:55 vitoria-550XCJ-550XCR mariadbd[37762]: 2020-09-28 22:48:55 0 [ERROR] Aborting
+set 28 22:48:57 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Main process exited, code=exited, status=1/FAILURE
+set 28 22:48:57 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Failed with result 'exit-code'.
+set 28 22:49:04 vitoria-550XCJ-550XCR sudo[37783]:  vitoria : TTY=pts/0 ; PWD=/home/vitoria/equipe-4/back-end ; USER=root ; COMMAND=/usr/bin/systemctl start mariadb
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] /usr/sbin/mariadbd (mysqld 10.5.5-MariaDB-1:10.5.5+maria~focal) starting as process 37845 ...
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Warning] Could not increase number of max_open_files to more than 16384 (request: 32190)
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] InnoDB: Using Linux native AIO
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] InnoDB: Uses event mutexes
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] InnoDB: Number of pools: 1
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] InnoDB: Using SSE4.2 crc32 instructions
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] InnoDB: Completed initialization of buffer pool
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] InnoDB: 128 rollback segments are active.
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] InnoDB: 10.5.5 started; log sequence number 88412; transaction id 125
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] Plugin 'FEEDBACK' is disabled.
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] Server socket created on IP: '127.0.0.1'.
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [Note] InnoDB: Buffer pool(s) load completed at 200928 22:49:04
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+set 28 22:49:04 vitoria-550XCJ-550XCR mariadbd[37845]: 2020-09-28 22:49:04 0 [ERROR] Aborting
+set 28 22:49:06 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Main process exited, code=exited, status=1/FAILURE
+set 28 22:49:06 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Failed with result 'exit-code'.
+set 28 23:01:54 vitoria-550XCJ-550XCR sudo[38035]:  vitoria : TTY=pts/0 ; PWD=/home/vitoria/equipe-4/back-end ; USER=root ; COMMAND=/usr/bin/systemctl status mariadb.service
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] /usr/sbin/mariadbd (mysqld 10.5.5-MariaDB-1:10.5.5+maria~focal) starting as process 40753 ...
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Warning] Could not increase number of max_open_files to more than 16384 (request: 32190)
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] InnoDB: Using Linux native AIO
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] InnoDB: Uses event mutexes
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] InnoDB: Number of pools: 1
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] InnoDB: Using SSE4.2 crc32 instructions
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] InnoDB: Completed initialization of buffer pool
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] InnoDB: 128 rollback segments are active.
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] InnoDB: 10.5.5 started; log sequence number 88424; transaction id 125
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] Plugin 'FEEDBACK' is disabled.
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] InnoDB: Buffer pool(s) load completed at 200928 23:27:35
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [Note] Server socket created on IP: '127.0.0.1'.
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+set 28 23:27:35 vitoria-550XCJ-550XCR mariadbd[40753]: 2020-09-28 23:27:35 0 [ERROR] Aborting
+set 28 23:27:36 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Main process exited, code=exited, status=1/FAILURE
+set 28 23:27:36 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Failed with result 'exit-code'.
+set 28 23:40:27 vitoria-550XCJ-550XCR sudo[41247]:     root : TTY=pts/0 ; PWD=/home/vitoria/equipe-4/back-end ; USER=root ; COMMAND=/usr/bin/apt install mariadb-server
+set 28 23:44:59 vitoria-550XCJ-550XCR sudo[41344]:     root : TTY=pts/0 ; PWD=/home/vitoria/equipe-4/back-end ; USER=root ; COMMAND=/usr/bin/mariadb
+set 29 00:12:32 vitoria-550XCJ-550XCR sudo[46448]:     root : TTY=pts/0 ; PWD=/home/vitoria/equipe-4/back-end ; USER=root ; COMMAND=/usr/bin/apt install mariadb-server
+set 29 00:13:13 vitoria-550XCJ-550XCR audit[46859]: AVC apparmor="STATUS" operation="profile_remove" info="profile does not exist" error=-2 profile="unconfined" name="/usr/sbin/mariadbd" pid=46859 comm="apparmor_parser"
+set 29 00:13:13 vitoria-550XCJ-550XCR kernel: audit: type=1400 audit(1601349193.869:39): apparmor="STATUS" operation="profile_remove" info="profile does not exist" error=-2 profile="unconfined" name="/usr/sbin/mariadbd" pid=46859 comm="apparmor_parser"
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] /usr/sbin/mariadbd (mysqld 10.5.5-MariaDB-1:10.5.5+maria~focal) starting as process 47016 ...
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Warning] Could not increase number of max_open_files to more than 16384 (request: 32190)
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] InnoDB: Using Linux native AIO
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] InnoDB: Uses event mutexes
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] InnoDB: Number of pools: 1
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] InnoDB: Using SSE4.2 crc32 instructions
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] InnoDB: Completed initialization of buffer pool
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] InnoDB: 128 rollback segments are active.
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] InnoDB: 10.5.5 started; log sequence number 45079; transaction id 21
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] Plugin 'FEEDBACK' is disabled.
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] InnoDB: Buffer pool(s) load completed at 200929  0:13:14
+set 29 00:13:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:14 0 [Note] Server socket created on IP: '127.0.0.1'.
+set 29 00:13:15 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:15 0 [Note] Reading of all Master_info entries succeeded
+set 29 00:13:15 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:15 0 [Note] Added new Master_info '' to hash table
+set 29 00:13:15 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:13:15 0 [Note] /usr/sbin/mariadbd: ready for connections.
+set 29 00:13:15 vitoria-550XCJ-550XCR mariadbd[47016]: Version: '10.5.5-MariaDB-1:10.5.5+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+set 29 00:15:41 vitoria-550XCJ-550XCR sudo[48286]:     root : TTY=pts/0 ; PWD=/home/vitoria/equipe-4/back-end ; USER=root ; COMMAND=/usr/bin/systemctl status mariadb
+set 29 00:20:19 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  0:20:19 43 [Warning] Access denied for user 'ecomp'@'localhost'
+set 29 09:02:47 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  9:02:47 48 [ERROR] InnoDB: Table `mysql`.`innodb_table_stats` not found.
+set 29 09:02:47 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  9:02:47 48 [Note] InnoDB: Recalculation of persistent statistics requested for table `mysql`.`users` index `users_email_unique` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+set 29 09:02:48 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  9:02:48 48 [Note] InnoDB: Recalculation of persistent statistics requested for table `mysql`.`oauth_auth_codes` index `oauth_auth_codes_user_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+set 29 09:02:48 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  9:02:48 48 [Note] InnoDB: Recalculation of persistent statistics requested for table `mysql`.`oauth_access_tokens` index `oauth_access_tokens_user_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+set 29 09:02:49 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  9:02:49 48 [Note] InnoDB: Recalculation of persistent statistics requested for table `mysql`.`oauth_refresh_tokens` index `oauth_refresh_tokens_access_token_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+set 29 09:02:49 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-29  9:02:49 48 [Note] InnoDB: Recalculation of persistent statistics requested for table `mysql`.`oauth_clients` index `oauth_clients_user_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+set 30 19:47:14 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-09-30 19:47:14 44 [Warning] Aborted connection 44 to db: 'unconnected' user: 'root' host: 'localhost' (Got timeout reading communication packets)
+out 01 16:02:05 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-01 16:02:05 53 [Note] InnoDB: Recalculation of persistent statistics requested for table `capacitacao`.`users` index `users_email_unique` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+out 01 16:02:06 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-01 16:02:06 53 [Note] InnoDB: Recalculation of persistent statistics requested for table `capacitacao`.`oauth_auth_codes` index `oauth_auth_codes_user_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+out 01 16:02:06 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-01 16:02:06 53 [Note] InnoDB: Recalculation of persistent statistics requested for table `capacitacao`.`oauth_access_tokens` index `oauth_access_tokens_user_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+out 01 16:02:06 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-01 16:02:06 53 [Note] InnoDB: Recalculation of persistent statistics requested for table `capacitacao`.`oauth_refresh_tokens` index `oauth_refresh_tokens_access_token_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+out 01 16:02:07 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-01 16:02:07 53 [Note] InnoDB: Recalculation of persistent statistics requested for table `capacitacao`.`oauth_clients` index `oauth_clients_user_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+out 01 16:45:03 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-01 16:45:03 54 [Note] InnoDB: Recalculation of persistent statistics requested for table `capacitacao`.`users` index `users_email_unique` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+out 01 16:45:03 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-01 16:45:03 54 [Note] InnoDB: Recalculation of persistent statistics requested for table `capacitacao`.`oauth_auth_codes` index `oauth_auth_codes_user_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+out 01 16:45:04 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-01 16:45:04 54 [Note] InnoDB: Recalculation of persistent statistics requested for table `capacitacao`.`oauth_access_tokens` index `oauth_access_tokens_user_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+out 01 16:45:04 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-01 16:45:04 54 [Note] InnoDB: Recalculation of persistent statistics requested for table `capacitacao`.`oauth_refresh_tokens` index `oauth_refresh_tokens_access_token_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+out 01 16:45:04 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-01 16:45:04 54 [Note] InnoDB: Recalculation of persistent statistics requested for table `capacitacao`.`oauth_clients` index `oauth_clients_user_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+out 09 09:22:28 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-09  9:22:28 56 [Note] InnoDB: Recalculation of persistent statistics requested for table `capacitacao`.`users` index `users_email_unique` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+out 09 09:22:28 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-09  9:22:28 56 [Note] InnoDB: Recalculation of persistent statistics requested for table `capacitacao`.`oauth_auth_codes` index `oauth_auth_codes_user_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+out 09 09:22:28 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-09  9:22:28 56 [Note] InnoDB: Recalculation of persistent statistics requested for table `capacitacao`.`oauth_access_tokens` index `oauth_access_tokens_user_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+out 09 09:22:29 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-09  9:22:29 56 [Note] InnoDB: Recalculation of persistent statistics requested for table `capacitacao`.`oauth_refresh_tokens` index `oauth_refresh_tokens_access_token_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+out 09 09:22:29 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-09  9:22:29 56 [Note] InnoDB: Recalculation of persistent statistics requested for table `capacitacao`.`oauth_clients` index `oauth_clients_user_id_index` but the required persistent statistics storage is not present or is corrupted. Using transient stats instead.
+out 13 14:35:00 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-13 14:35:00 0 [Note] /usr/sbin/mariadbd (initiated by: unknown): Normal shutdown
+out 13 14:35:00 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-13 14:35:00 0 [Note] Event Scheduler: Purging the queue. 0 events
+out 13 14:35:01 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-13 14:35:01 0 [Note] InnoDB: FTS optimize thread exiting.
+out 13 14:35:01 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-13 14:35:01 0 [Note] InnoDB: Starting shutdown...
+out 13 14:35:02 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-13 14:35:01 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+out 13 14:35:02 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-13 14:35:01 0 [Note] InnoDB: Buffer pool(s) dump completed at 201013 14:35:01
+out 13 14:35:03 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-13 14:35:03 0 [Note] InnoDB: Shutdown completed; log sequence number 226759; transaction id 418
+out 13 14:35:03 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-13 14:35:03 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+out 13 14:35:04 vitoria-550XCJ-550XCR mariadbd[47016]: 2020-10-13 14:35:04 0 [Note] /usr/sbin/mariadbd: Shutdown complete
+out 13 14:35:04 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Succeeded.
+out 14 12:33:27 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:27 0 [Note] /usr/sbin/mariadbd (mysqld 10.5.5-MariaDB-1:10.5.5+maria~focal) starting as process 937 ...
+out 14 12:33:27 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:27 0 [Warning] Could not increase number of max_open_files to more than 16384 (request: 32190)
+out 14 12:33:30 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:30 0 [Note] InnoDB: Using Linux native AIO
+out 14 12:33:30 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:30 0 [Note] InnoDB: Uses event mutexes
+out 14 12:33:30 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:30 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+out 14 12:33:30 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:30 0 [Note] InnoDB: Number of pools: 1
+out 14 12:33:30 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:30 0 [Note] InnoDB: Using SSE4.2 crc32 instructions
+out 14 12:33:30 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:30 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+out 14 12:33:30 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:30 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+out 14 12:33:30 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:30 0 [Note] InnoDB: Completed initialization of buffer pool
+out 14 12:33:30 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:30 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+out 14 12:33:31 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:31 0 [Note] InnoDB: 128 rollback segments are active.
+out 14 12:33:31 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:31 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+out 14 12:33:31 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:31 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+out 14 12:33:32 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:32 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+out 14 12:33:32 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:32 0 [Note] InnoDB: 10.5.5 started; log sequence number 226759; transaction id 420
+out 14 12:33:32 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:32 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+out 14 12:33:32 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:32 0 [Note] Plugin 'FEEDBACK' is disabled.
+out 14 12:33:32 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:32 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+out 14 12:33:32 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:32 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+out 14 12:33:32 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:32 0 [Note] Server socket created on IP: '127.0.0.1'.
+out 14 12:33:32 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:32 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+out 14 12:33:32 vitoria-550XCJ-550XCR mariadbd[937]: 2020-10-14 12:33:32 0 [ERROR] Aborting
+out 14 12:33:34 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Main process exited, code=exited, status=1/FAILURE
+out 14 12:33:34 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Failed with result 'exit-code'.
+out 18 21:04:53 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:53 0 [Note] /usr/sbin/mariadbd (mysqld 10.5.5-MariaDB-1:10.5.5+maria~focal) starting as process 83635 ...
+out 18 21:04:53 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:53 0 [Warning] Could not increase number of max_open_files to more than 16384 (request: 32190)
+out 18 21:04:53 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:53 0 [Note] InnoDB: Using Linux native AIO
+out 18 21:04:53 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:53 0 [Note] InnoDB: Uses event mutexes
+out 18 21:04:53 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:53 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+out 18 21:04:53 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:53 0 [Note] InnoDB: Number of pools: 1
+out 18 21:04:54 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:54 0 [Note] InnoDB: Using SSE4.2 crc32 instructions
+out 18 21:04:54 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:54 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+out 18 21:04:54 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:54 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+out 18 21:04:54 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:54 0 [Note] InnoDB: Completed initialization of buffer pool
+out 18 21:04:54 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:54 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+out 18 21:04:54 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:54 0 [Note] InnoDB: 128 rollback segments are active.
+out 18 21:04:54 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:54 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+out 18 21:04:54 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:54 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+out 18 21:04:54 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:54 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+out 18 21:04:54 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:54 0 [Note] InnoDB: 10.5.5 started; log sequence number 226771; transaction id 420
+out 18 21:04:54 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:54 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+out 18 21:04:54 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:54 0 [Note] Plugin 'FEEDBACK' is disabled.
+out 18 21:04:54 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:54 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+out 18 21:04:54 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:54 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+out 18 21:04:54 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:54 0 [Note] Server socket created on IP: '127.0.0.1'.
+out 18 21:04:54 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:54 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+out 18 21:04:54 vitoria-550XCJ-550XCR mariadbd[83635]: 2020-10-18 21:04:54 0 [ERROR] Aborting
+out 18 21:04:56 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Main process exited, code=exited, status=1/FAILURE
+out 18 21:04:56 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Failed with result 'exit-code'.
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Note] /usr/sbin/mariadbd (mysqld 10.5.5-MariaDB-1:10.5.5+maria~focal) starting as process 84047 ...
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Warning] Could not increase number of max_open_files to more than 16384 (request: 32190)
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Note] InnoDB: Using Linux native AIO
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Note] InnoDB: Uses event mutexes
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Note] InnoDB: Number of pools: 1
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Note] InnoDB: Using SSE4.2 crc32 instructions
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Note] InnoDB: Completed initialization of buffer pool
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Note] InnoDB: 128 rollback segments are active.
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Note] InnoDB: 10.5.5 started; log sequence number 226783; transaction id 420
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Note] Plugin 'FEEDBACK' is disabled.
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [Note] Server socket created on IP: '127.0.0.1'.
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+out 18 22:07:48 vitoria-550XCJ-550XCR mariadbd[84047]: 2020-10-18 22:07:48 0 [ERROR] Aborting
+out 18 22:07:50 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Main process exited, code=exited, status=1/FAILURE
+out 18 22:07:50 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Failed with result 'exit-code'.
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Note] /usr/sbin/mariadbd (mysqld 10.5.5-MariaDB-1:10.5.5+maria~focal) starting as process 84214 ...
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Warning] Could not increase number of max_open_files to more than 16384 (request: 32190)
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Note] InnoDB: Using Linux native AIO
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Note] InnoDB: Uses event mutexes
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Note] InnoDB: Number of pools: 1
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Note] InnoDB: Using SSE4.2 crc32 instructions
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Note] InnoDB: Completed initialization of buffer pool
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Note] InnoDB: 128 rollback segments are active.
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Note] InnoDB: 10.5.5 started; log sequence number 226795; transaction id 420
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Note] Plugin 'FEEDBACK' is disabled.
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [Note] Server socket created on IP: '127.0.0.1'.
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+out 18 22:09:29 vitoria-550XCJ-550XCR mariadbd[84214]: 2020-10-18 22:09:29 0 [ERROR] Aborting
+out 18 22:09:31 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Main process exited, code=exited, status=1/FAILURE
+out 18 22:09:31 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Failed with result 'exit-code'.
+out 19 11:13:56 vitoria-550XCJ-550XCR sudo[85079]:  vitoria : TTY=pts/1 ; PWD=/home/vitoria/Área de Trabalho/equipe-4/back-end ; USER=root ; COMMAND=/usr/bin/systemctl start mariadb
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Note] /usr/sbin/mariadbd (mysqld 10.5.5-MariaDB-1:10.5.5+maria~focal) starting as process 85145 ...
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Warning] Could not increase number of max_open_files to more than 16384 (request: 32190)
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Note] InnoDB: Using Linux native AIO
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Note] InnoDB: Uses event mutexes
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Note] InnoDB: Number of pools: 1
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Note] InnoDB: Using SSE4.2 crc32 instructions
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Note] InnoDB: Completed initialization of buffer pool
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Note] InnoDB: 128 rollback segments are active.
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Note] InnoDB: 10.5.5 started; log sequence number 226807; transaction id 420
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Note] Plugin 'FEEDBACK' is disabled.
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [Note] Server socket created on IP: '127.0.0.1'.
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+out 19 11:13:57 vitoria-550XCJ-550XCR mariadbd[85145]: 2020-10-19 11:13:57 0 [ERROR] Aborting
+out 19 11:13:58 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Main process exited, code=exited, status=1/FAILURE
+out 19 11:13:58 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Failed with result 'exit-code'.
+out 20 12:48:36 vitoria-550XCJ-550XCR sudo[111588]:  vitoria : TTY=pts/0 ; PWD=/home/vitoria/Área de Trabalho/equipe-4/back-end ; USER=root ; COMMAND=/usr/bin/systemctl start mariadb
+out 20 12:48:36 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:36 0 [Note] /usr/sbin/mariadbd (mysqld 10.5.5-MariaDB-1:10.5.5+maria~focal) starting as process 111657 ...
+out 20 12:48:36 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:36 0 [Warning] Could not increase number of max_open_files to more than 16384 (request: 32190)
+out 20 12:48:36 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:36 0 [Note] InnoDB: Using Linux native AIO
+out 20 12:48:36 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:36 0 [Note] InnoDB: Uses event mutexes
+out 20 12:48:36 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:36 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+out 20 12:48:36 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:36 0 [Note] InnoDB: Number of pools: 1
+out 20 12:48:36 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:36 0 [Note] InnoDB: Using SSE4.2 crc32 instructions
+out 20 12:48:36 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:36 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+out 20 12:48:37 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:37 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+out 20 12:48:37 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:37 0 [Note] InnoDB: Completed initialization of buffer pool
+out 20 12:48:37 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:37 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+out 20 12:48:37 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:37 0 [Note] InnoDB: 128 rollback segments are active.
+out 20 12:48:37 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:37 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+out 20 12:48:37 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:37 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+out 20 12:48:37 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:37 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+out 20 12:48:37 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:37 0 [Note] InnoDB: 10.5.5 started; log sequence number 226847; transaction id 420
+out 20 12:48:37 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:37 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+out 20 12:48:37 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:37 0 [Note] Plugin 'FEEDBACK' is disabled.
+out 20 12:48:37 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:37 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+out 20 12:48:37 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:37 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+out 20 12:48:37 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:37 0 [Note] Server socket created on IP: '127.0.0.1'.
+out 20 12:48:37 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:37 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+out 20 12:48:37 vitoria-550XCJ-550XCR mariadbd[111657]: 2020-10-20 12:48:37 0 [ERROR] Aborting
+out 20 12:48:38 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Main process exited, code=exited, status=1/FAILURE
+out 20 12:48:38 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Failed with result 'exit-code'.
+out 20 15:06:21 vitoria-550XCJ-550XCR sudo[114688]:  vitoria : TTY=pts/0 ; PWD=/home/vitoria/Área de Trabalho/equipe-4/back-end ; USER=root ; COMMAND=/usr/bin/apt remove mariadb-server
+out 20 15:06:40 vitoria-550XCJ-550XCR sudo[114845]:  vitoria : TTY=pts/0 ; PWD=/home/vitoria/Área de Trabalho/equipe-4/back-end ; USER=root ; COMMAND=/usr/bin/apt install mariadb-server
+out 20 15:07:43 vitoria-550XCJ-550XCR mariadb-server-10.5.postinst[115075]: mysql.user table already exists!
+out 20 15:07:43 vitoria-550XCJ-550XCR mariadb-server-10.5.postinst[115075]: Run mysql_upgrade, not mysql_install_db
+out 20 15:07:43 vitoria-550XCJ-550XCR audit[115110]: AVC apparmor="STATUS" operation="profile_remove" info="profile does not exist" error=-2 profile="unconfined" name="/usr/sbin/mariadbd" pid=115110 comm="apparmor_parser"
+out 20 15:07:43 vitoria-550XCJ-550XCR kernel: audit: type=1400 audit(1603217263.492:51): apparmor="STATUS" operation="profile_remove" info="profile does not exist" error=-2 profile="unconfined" name="/usr/sbin/mariadbd" pid=115110 comm="apparmor_parser"
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] /usr/sbin/mariadbd (mysqld 10.5.6-MariaDB-1:10.5.6+maria~focal) starting as process 115235 ...
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Warning] Could not increase number of max_open_files to more than 16384 (request: 32190)
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] InnoDB: Using Linux native AIO
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] InnoDB: Uses event mutexes
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] InnoDB: Number of pools: 1
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] InnoDB: Using SSE4.2 crc32 instructions
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] InnoDB: Completed initialization of buffer pool
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] InnoDB: 128 rollback segments are active.
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] InnoDB: 10.5.6 started; log sequence number 226859; transaction id 420
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] Plugin 'FEEDBACK' is disabled.
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] InnoDB: Buffer pool(s) load completed at 201020 15:07:44
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [Note] Server socket created on IP: '127.0.0.1'.
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+out 20 15:07:44 vitoria-550XCJ-550XCR mariadbd[115235]: 2020-10-20 15:07:44 0 [ERROR] Aborting
+out 20 15:07:46 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Main process exited, code=exited, status=1/FAILURE
+out 20 15:07:46 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Failed with result 'exit-code'.
+out 20 15:09:52 vitoria-550XCJ-550XCR sudo[116562]:  vitoria : TTY=pts/0 ; PWD=/home/vitoria/Área de Trabalho/equipe-4/back-end ; USER=root ; COMMAND=/usr/bin/systemctl start mariadb
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] /usr/sbin/mariadbd (mysqld 10.5.6-MariaDB-1:10.5.6+maria~focal) starting as process 116626 ...
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Warning] Could not increase number of max_open_files to more than 16384 (request: 32190)
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] InnoDB: Using Linux native AIO
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] InnoDB: Uses event mutexes
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] InnoDB: Number of pools: 1
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] InnoDB: Using SSE4.2 crc32 instructions
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] mariadbd: O_TMPFILE is not supported on /tmp (disabling future attempts)
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] InnoDB: Completed initialization of buffer pool
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] InnoDB: 128 rollback segments are active.
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] InnoDB: 10.5.6 started; log sequence number 226871; transaction id 420
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] Plugin 'FEEDBACK' is disabled.
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] InnoDB: Buffer pool(s) load completed at 201020 15:09:52
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] Server socket created on IP: '127.0.0.1'.
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [ERROR] Aborting
+out 20 15:09:54 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Main process exited, code=exited, status=1/FAILURE
+out 20 15:09:54 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Failed with result 'exit-code'.

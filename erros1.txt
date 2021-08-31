@@ -1,0 +1,24 @@
+● mariadb.service - MariaDB 10.5.6 database server
+     Loaded: loaded (/lib/systemd/system/mariadb.service; enabled; vendor preset: enabled)
+    Drop-In: /etc/systemd/system/mariadb.service.d
+             └─migrated-from-my.cnf-settings.conf
+     Active: failed (Result: exit-code) since Tue 2020-10-20 15:09:54 -03; 1min 49s ago
+       Docs: man:mariadbd(8)
+             https://mariadb.com/kb/en/library/systemd/
+    Process: 116565 ExecStartPre=/usr/bin/install -m 755 -o mysql -g root -d /var/run/mysqld (code=exited, status=0/SUCCESS)
+    Process: 116569 ExecStartPre=/bin/sh -c systemctl unset-environment _WSREP_START_POSITION (code=exited, status=0/SUCCESS)
+    Process: 116579 ExecStartPre=/bin/sh -c [ ! -e /usr/bin/galera_recovery ] && VAR= ||   VAR=`cd /usr/bin/..; /usr/bin/galera_recovery`; [ $? -eq 0 ]   && systemctl set-environment _WSREP_START_POSITION=$VAR || exit 1 (code=exited, status=0/SUCCESS)
+    Process: 116626 ExecStart=/usr/sbin/mariadbd $MYSQLD_OPTS $_WSREP_NEW_CLUSTER $_WSREP_START_POSITION (code=exited, status=1/FAILURE)
+   Main PID: 116626 (code=exited, status=1/FAILURE)
+     Status: "MariaDB server is down"
+
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] Plugin 'FEEDBACK' is disabled.
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [ERROR] Could not open mysql.plugin table: "Table 'mysql.plugin' doesn't exist". Some plugins may be not loaded
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] InnoDB: Buffer pool(s) load completed at 201020 15:09:52
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [Note] Server socket created on IP: '127.0.0.1'.
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [ERROR] Fatal error: Can't open and lock privilege tables: Table 'mysql.db' doesn't exist
+out 20 15:09:52 vitoria-550XCJ-550XCR mariadbd[116626]: 2020-10-20 15:09:52 0 [ERROR] Aborting
+out 20 15:09:54 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Main process exited, code=exited, status=1/FAILURE
+out 20 15:09:54 vitoria-550XCJ-550XCR systemd[1]: mariadb.service: Failed with result 'exit-code'.
+out 20 15:09:54 vitoria-550XCJ-550XCR systemd[1]: Failed to start MariaDB 10.5.6 database server.
